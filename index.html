@@ -36,6 +36,23 @@ import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/12.0.
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js';
 import { getFirestore, collection, doc, setDoc, getDoc, getDocs, query, orderBy, serverTimestamp, onSnapshot, addDoc, deleteDoc } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js';
 /* ====== FIREBASE CONFIG: apni values yahan bharein (Firebase Console > Project settings > Web app) ====== */
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBv56puD1B7zYIcURtJXTQpD6-2NdUP-kM",
+  authDomain: "workflow-32be8.firebaseapp.com",
+  projectId: "workflow-32be8",
+  storageBucket: "workflow-32be8.firebasestorage.app",
+  messagingSenderId: "372203519022",
+  appId: "1:372203519022:web:36e0f4034b64f10c41f3bf"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const FIREBASE_CONFIG={apiKey:"",authDomain:"",projectId:"",appId:"",storageBucket:"",messagingSenderId:""};
 /* ====================================================================================================== */
 const $=id=>document.getElementById(id); const LS_CONFIG='workflow-firebase-config'; const LS_PROFILES='workflow-local-creators';
